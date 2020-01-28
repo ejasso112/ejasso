@@ -274,8 +274,9 @@ Projects Section
     color: #4A4A4A;
     font-size: 16px;
 }
-.project-views li {
-    border: 1px solid #4A4A4A;
+.project-views p {
+	border: 1px solid #4A4A4A;
+	color: #4A4A4A;
     padding: 2px 8px;
     margin: 4px;
     font-size: 12px;
@@ -315,7 +316,7 @@ Projects Section
     color: white;
 }
 
-.project-views li:hover {
+.project-views p:hover {
     background-color: #E31B6D;
     border: 1px solid #E31B6D;
     color: #F5F5F5;
