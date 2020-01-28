@@ -11,7 +11,7 @@
          url('../fonts/CenturyGothic/CenturyGothic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 /*******************************
   Global Defaults
@@ -27,123 +27,188 @@ body {
     background: #4A4A4A;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1600px;
-}
-
-.heading {
+h1 {
     color: #4A4A4A;
 	border-bottom: 4px solid #4A4A4A;
 	text-transform: uppercase;
-	margin: 92px 0 48px 0;
+	margin-bottom: 48px;
 	font-size: 40px;
 	padding-bottom: 12px;
 }
 
-.sub-heading {
+h2 {
     color: #4A4A4A;
     font-size: 28px;
 	padding: 16px
+}
+
+.section {
+	padding: 92px;
+}
+
+.container {
+    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 1600px;
 }
 .content {
     text-align: justify;
 	color: #4A4A4A;
 }
+
+.button {
+	border: 1px solid #FFFFFF;
+	text-decoration: none;
+}
+
 /***********************************
 Banner Section
 ***********************************/
-.banner-section {
+#banner {
 	background-color: #161616;
 	height: 100vh;
+	position: relative;
+	padding: 0;
 }
 
-.banner-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+#banner-container {
 	height: 100%;
 }
 
-.banner-title {
-    font-size: 50px;
+/********** Banner Title **********/
+#title {
+	width: 600px;
+	padding: 12px;
 }
 
-.banner-sub-title {
-    font-size: 14px;
+.title-svg {
+	fill: #fff;
+	stroke: #fff;
+	stroke-dasharray: 1500;
+	animation: animate 3s cubic-bezier(.49, .08, .94, .59);
 }
 
-.banner-button {
-	border: 2px solid #FFFFFF;
-	text-decoration: none;
+/******** Banner Sub Title ********/
+#banner-sub-title {
+	color: #FFFFFF;
 	font-size: 16px;
-	padding: 8px;
+	animation: typewriter 2s steps(50) 2s 1 normal both,
+		blinkTextCursor 700ms steps(50) 2.1s infinite normal;
+	
+	overflow: hidden;
+	border-right: 2px solid transparent;
+	white-space: nowrap;
+}
+
+/********* Banner Button **********/
+#banner-button {
+	margin: 32px;
+	border-width: 2px;
+	font-size: 16px;
+	padding: 12px;
+	animation: raise 5s ease forwards;
+}
+
+#button-content {
+	font-size: 22px;
+}
+
+#banner-button:hover {
+	border: 2px solid #2E82FF;
+	background-color: #2E82FF;
 }
 
 /***********************************
 Nav Section
 ***********************************/
-.nav-section {
+#nav {
     background-color: #111111;
-    border-bottom: 3px solid #2e82ff;
+	border-bottom: 3px solid #2e82ff;
+	padding: 0;
+
 }
 
-.nav-container {
-    display: flex;
+#nav-container {
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
-.nav-title {
-    margin: 14px;
+
+#nav-title {
+	width: 222px;
+	margin: 8px 14px 8px 14px;
 }
-.nav-bar {
+
+.nav-title-svg {
+	fill: #fff;
+	stroke: #fff;
+	stroke-miterlimit: 10;
+}
+
+#nav-bar {
     margin: 14px;
 }
 
-.nav-bar a {
+#nav-bar a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
     margin-left: 28px;
 }
 
+#nav-bar a:hover {
+	color: #E31B6D;
+}
+
+#nav-bar a.active {
+	color: #E31B6D;
+}
 /***********************************
 About Section
 ***********************************/
-.about-section {
-    background-color: #FFFFFF;
-}
-.about-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+#about {
+	background-color: #FFFFFF;
 }
 
-.about-content{
-    width: 75%;
+#proifle-img-container {
+	width: 272px;
+	height: 272px;
+	border-radius: 136px;
+	background-color: #2E82FF;
+}
+
+#profile-img {
+	width: 268px;
+	height: 268px;
+}
+
+#about-sub-heading {
+	font-weight: normal;
+}
+
+#about-content{
+    max-width: 1000px;
+}
+
+#about-content .know {
+	color: #2E82FF;
+}
+
+#about-content .learn {
+	color: #E31B6D;
 }
 
 /***********************************
 Skills Section
 ***********************************/
-.skills-section {
+#skills {
 	background-color: #F5F5F5;
 }
 
-.skills-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.skill-group {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+#skill-groups {
+	flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -387,4 +452,81 @@ Footer Section
 
 .footer-cr {
 	color: #E31B6D;
+}
+
+.back-to-top {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.back-to-top p {
+	top: -24px;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	background-color: #E31B6D;
+	width: 48px;
+	height: 48px;
+}
+
+.back-to-top:hover>p {
+	background-color: rgb(245, 27, 109);
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: 1500;
+	}
+
+	30% {
+		opacity: 10;
+		fill: none;
+		stroke-dashoffset: 1500;
+	}
+
+	90% {
+		fill: rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		opacity: 10;
+		fill: rgba(255, 255, 255, 1);
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes raise {
+	0% {
+		opacity: 0;
+		transform: translateY(400px);
+	}
+
+	80% {
+		opacity: 0;
+		transform: translateY(400px);
+	}
+}
+
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 25em;
+	}
+}
+
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: rgba(255, 255, 255, 0.75);
+	}
+
+	to {
+		border-right-color: transparent;
+	}
 }
