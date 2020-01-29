@@ -28,8 +28,10 @@
                     transform="translate(-8.71 -4.17)" />
             </svg>
             <p id="banner-sub-title">Web Design.&emsp;Software Developer.&emsp;UX/UI Design.</p>
-            <a class="button" id="banner-button" href="#about">
-                <p id="button-content">View my work -></p>
+            <a class="container" id="banner-button" href="#about">
+                <p id="button-content">View my work&nbsp;</p>
+                <svg class="right-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path class="right-arrow-svg" d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"></path></svg>
             </a>
         </div>
     </header>
@@ -84,34 +86,34 @@
     </section>
 
     <section class="section" id="skills">
-        <div class="skills-container container">
+        <div class="container" id="skills-container">
             <h1 class="heading" id="skills-title">Skills</h1>
             <div class="container" id="skill-groups">
-                <div class="front-end skill">
-                    <div class="sub-heading">Front-end</div>
+                <div class="skill" id="front-end">
+                    <h2 class="sub-heading">Front-end</h2>
                     <ul class="skill-list">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JS</li>
                     </ul>
                 </div>
-                <div class="back-end skill">
-                    <div class="sub-heading">Back-end</div>
+                <div class="skill" id="back-end">
+                    <h2 class="sub-heading">Back-end</h2>
                     <ul class="skill-list">
                         <li>SQL</li>
                         <li>PHP</li>
                     </ul>
                 </div>
-                <div class="microsoft-office skill">
-                    <div class="sub-heading">MS-Office</div>
+                <div class="skill" id="office">
+                    <h2 class="sub-heading">MS-Office</h2>
                     <ul class="skill-list">
                         <li>Word</li>
                         <li>Excel</li>
                         <li>PowerPoint</li>
                     </ul>
                 </div>
-                <div class="adobe skill">
-                    <div class="sub-heading">Design Tools</div>
+                <div class="skill" id="design-tools">
+                    <h2 class="sub-heading">Design Tools</h2>
                     <ul class="skill-list">
                         <li>Photoshop</li>
                         <li>Illustrator</li>
@@ -122,28 +124,22 @@
         </div>
     </section>
 
-    <div class="projects-section">
-        <div class="projects-container container">
-            <div class="projects-title">
-                <p class="heading">Projects</p>
-            </div>
-            <div class="projects">
-                <div class="project">
-                    <div class="project-left">
-                        <div class="project-img"><img src="/img/favicon.png" alt=""></div>
-                        <div class="project-name">ejasso</div>
+    <section class="section" id="projects">
+        <div class="container" id="projects-container">
+            <h1 class="heading" id="projects-title">Projects</h1>
+            <div class="container" id="projects-group">
+                <div class="container project-individual">
+                    <div class="container project-img-title">
+                        <img class="project-img" src="/img/favicon.png" alt="">
+                        <p class="project-name">ejasso</p>
                     </div>
-                    <div class="project-right">
-                        <div class="project-description">Personal website used to show my portfolio of projects.</div>
-                        <div class="project-views">
-                            <p>More Info</p>
-                            <a href="https://ejasso.com/" rel="noopener" target="_blank">
-                                <p>Site</p>
-                            </a>
-                            <a href="https://github.com/ejasso112/ejasso" rel="noopener" target="_blank">
-                                <p>Github</p>
-                            </a>
-                        </div>
+                    <div class="project-content">
+                        <p class="project-description">Personal website used to show my portfolio of projects.</p>
+                        <ul class="project-views">
+                            <li><a href=""> More Info</a></li>
+                            <li><a href="https://ejasso.com/" rel="noopener" target="_blank">Site</a></li>
+                            <li><a href="https://github.com/ejasso112/ejasso" rel="noopener" target="_blank">Github</a></li>
+                        </ul>
                         <ul class="project-languages">
                             <li class="front">HTML</li>
                             <li class="front">CSS</li>
@@ -153,21 +149,21 @@
                     </div>
                 </div>
 
-                <div class="project">
-                    <div class="project-left">
-                        <div class="project-img"><img src="/img/fav.png" alt=""></div>
-                        <div class="project-name">my pantry</div>
+                <div class="container project-individual">
+                    <div class="container project-img-title">
+                        <img class="project-img" src="/img/fav.png" alt="">
+                        <p class="project-name">my pantry</p>
                     </div>
-                    <div class="project-right">
-                        <div class="project-description">Know every food item you have to make the perfect meal with the
-                            things that you have.</div>
-                        <div class="project-views">
-                            <p>More Info</p>
-                            <p>Site</p>
-                            <p>Github</p>
-                        </div>
+                    <div class="project-content">
+                        <p class="project-description">Know every food item you have to make the perfect meal with the
+                            things that you have.</p>
+                        <ul class="project-views">
+                            <li><a href=""> More Info</a></li>
+                            <li><a href="https://ejasso.com/" rel="noopener" target="_blank">Site</a></li>
+                            <li><a href="https://github.com/ejasso112/ejasso" rel="noopener" target="_blank">Github</a></li>
+                        </ul>
                         <ul class="project-languages">
-                            <li class="front">HTML</liclass="front">
+                            <li class="front">HTML</li>
                             <li class="front">CSS</li>
                             <li class="front">JavaScript</li>
                             <li class="back">SQL</li>
@@ -177,17 +173,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="contact-section">
-        <div class=" sub-section">
-            <div class="contact-container container">
-                <div class="contact-title">
-                    <p class="heading">Contact</p>
-                </div>
-                <div class="contact-sub">
-                    <div class="sub-heading">Have a question to ask me?</div>
-                </div>
+    <section class="section" id="contact">
+        <div class="section" id="clip-path">
+            <div class="container" id="contact-container">
+                <h1 class="heading" id="contact-title">Contact</h1>
+                <h2 class="sub-heading" id="contact-sub-heading">Have a question to ask me?</h2>
                 <form class="contact-form" method="POST">
                     <input type="text" id="name" aria-label="Name" placeholder="Name">
                     <input type="text" id="email" aria-label="Email Address" placeholder="Email Address">
@@ -197,30 +189,28 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 
-    <a href="#home" class="back-to-top">
+    <a href="#banner" class="back-to-top">
         <p>up</p>
     </a>
 
-    <footer class="footer-section">
-        <div class="footer-container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/" aria-label="linkedin" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+    <footer class="section" id="footer">
+        <div class="container" id="footer-container">
+            <div class="container" id="social-links">
+                <a class="container" href="https://www.linkedin.com/" aria-label="linkedin" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" viewBox="0 0 24 24">
                         <path class="social-svg"
                             d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                     </svg>
                 </a>
-                <a href="https://github.com/ejasso112" aria-label="github" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                <a class="container" href="https://github.com/ejasso112" aria-label="github" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                         width="24" height="24" viewBox="0 0 24 24">
                         <path class="social-svg"
                             d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg></a>
             </div>
-            <div class="footer-copyright">
-                <p class="footer-cr-name">Eduardo Jasso <span class="footer-cr">&copy;2019</span></p>
-            </div>
+            <p class="footer-cr-name">Eduardo Jasso <span class="footer-cr">&copy;2019-2020</span></p>
         </div>
     </footer>
 
