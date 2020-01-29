@@ -110,11 +110,9 @@ Banner Section
 	/*animation: raise 5s ease forwards;*/
 }
 .right-arrow {
+	fill: #FFFFFF;
 	width: 16px;
 	height: 16px;
-}
-.right-arrow-svg {
-	fill: #FFFFFF;
 }
 
 #button-content {
@@ -435,23 +433,24 @@ Footer Section
 	color: #E31B6D;
 }
 
-.back-to-top {
+#back-to-top {
 	position: relative;
-	display: flex;
-	justify-content: center;
+	padding: 0;
+	margin: 0;
+	top: -24px;
 }
 
-.back-to-top p {
-	top: -24px;
-	display: flex;
-	position: absolute;
-	align-items: center;
-	justify-content: center;
+#back-to-top a {
 	background-color: #E31B6D;
 	width: 48px;
 	height: 48px;
 }
 
+.btt-up-arrow {
+	fill: #FFFFFF;
+	width: 18px;
+	height: 18px;
+}
 .back-to-top:hover>p {
 	background-color: rgb(245, 27, 109);
 }
