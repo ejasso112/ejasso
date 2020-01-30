@@ -2,15 +2,15 @@
   Font Defaults
 *******************************/
 @font-face {
-    font-family: 'CenturyGothic';
-    src: url('../fonts/CenturyGothic/CenturyGothic.eot');
-    src: url('../fonts/CenturyGothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic') format('svg'),
-         url('../fonts/CenturyGothic/CenturyGothic.ttf') format('truetype'),
-         url('../fonts/CenturyGothic/CenturyGothic.woff') format('woff'),
-         url('../fonts/CenturyGothic/CenturyGothic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'CenturyGothic';
+	src: url('../fonts/CenturyGothic/CenturyGothic.eot');
+	src: url('../fonts/CenturyGothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic') format('svg'),
+		url('../fonts/CenturyGothic/CenturyGothic.ttf') format('truetype'),
+		url('../fonts/CenturyGothic/CenturyGothic.woff') format('woff'),
+		url('../fonts/CenturyGothic/CenturyGothic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /*******************************
@@ -24,11 +24,11 @@
 }
 
 body {
-    background: #111111;
+	background: #111111;
 }
 
 h1 {
-    color: #4A4A4A;
+	color: #4A4A4A;
 	border-bottom: 4px solid #4A4A4A;
 	text-transform: uppercase;
 	margin-bottom: 48px;
@@ -37,8 +37,8 @@ h1 {
 }
 
 h2 {
-    color: #4A4A4A;
-    font-size: 28px;
+	color: #4A4A4A;
+	font-size: 28px;
 	padding: 16px;
 	font-weight: normal;
 }
@@ -48,15 +48,16 @@ h2 {
 }
 
 .container {
-    margin: 0 auto;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	max-width: 1600px;
 }
+
 .content {
-    text-align: justify;
+	text-align: justify;
 	color: #4A4A4A;
 }
 
@@ -66,7 +67,6 @@ Banner Section
 #banner {
 	background-color: #161616;
 	height: 100vh;
-	position: relative;
 	padding: 0;
 }
 
@@ -93,7 +93,7 @@ Banner Section
 	font-size: 16px;
 	animation: typewriter 2s steps(50) 2s 1 normal both,
 		blinkTextCursor 700ms steps(50) 2.1s infinite normal;
-	
+
 	overflow: hidden;
 	border-right: 2px solid transparent;
 	white-space: nowrap;
@@ -107,8 +107,9 @@ Banner Section
 	text-decoration: none;
 	font-size: 16px;
 	padding: 6px;
-	/*animation: raise 5s ease forwards;*/
+	animation: raise 5s ease forwards;
 }
+
 .right-arrow {
 	fill: #FFFFFF;
 	width: 16px;
@@ -128,15 +129,17 @@ Banner Section
 Nav Section
 ***********************************/
 #nav {
-    background-color: #111111;
+	z-index: 1;
+	position: sticky;
+	top: 0;
+	background-color: #111111;
 	border-bottom: 3px solid #2e82ff;
 	padding: 0;
-
 }
 
 #nav-container {
-    flex-direction: row;
-    justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 #nav-title {
@@ -151,14 +154,14 @@ Nav Section
 }
 
 #nav-bar {
-    margin: 14px;
+	margin: 14px;
 }
 
 #nav-bar a {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 16px;
-    margin-left: 28px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	margin-left: 28px;
 }
 
 #nav-bar a:hover {
@@ -168,6 +171,7 @@ Nav Section
 #nav-bar a.active {
 	color: #E31B6D;
 }
+
 /***********************************
 About Section
 ***********************************/
@@ -187,8 +191,8 @@ About Section
 	height: 268px;
 }
 
-#about-content{
-    max-width: 1000px;
+#about-content {
+	max-width: 1000px;
 }
 
 #about-content .know {
@@ -208,30 +212,30 @@ Skills Section
 
 #skill-groups {
 	flex-direction: row;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .skill {
 	text-align: center;
-    padding: 32px;
+	padding: 32px;
 }
 
 .skill-list {
-    display: flex;
+	display: flex;
 	flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-    border: 1px solid #4A4A4A;
-    border-radius: 12px;
-    height: 128px;
+	text-align: center;
+	justify-content: space-evenly;
+	border: 1px solid #4A4A4A;
+	border-radius: 12px;
+	height: 128px;
 	width: 256px;
 	list-style-type: none;
 }
 
-.skill-list li{
-    list-style: none;
-    color: #4A4A4A;
-    padding: 6px;
+.skill-list li {
+	list-style: none;
+	color: #4A4A4A;
+	padding: 6px;
 }
 
 /***********************************
@@ -239,7 +243,7 @@ Projects Section
 ***********************************/
 #projects {
 	background-color: #FFFFFF;
-	
+
 	justify-content: start;
 }
 
@@ -262,9 +266,10 @@ Projects Section
 }
 
 .project-img {
-    width: 64px;
-    height: 64px;
+	width: 64px;
+	height: 64px;
 }
+
 .project-name {
 	color: #4A4A4A;
 	font-size: 16px;
@@ -272,26 +277,26 @@ Projects Section
 }
 
 .project-description {
-    color: #4A4A4A;
-    font-size: 16px;
+	color: #4A4A4A;
+	font-size: 16px;
 }
 
-.project-views li{
+.project-views li {
 	display: inline-block;
 	border: 1px solid #4A4A4A;
-    border-radius: 8px;
+	border-radius: 8px;
 }
 
-.project-views li a{
+.project-views li a {
 	display: block;
 	color: #4A4A4A;
-    padding: 2px 8px;
+	padding: 2px 8px;
 	font-size: 12px;
 	text-decoration: none;
 }
 
 .project-views li:hover {
-    background-color: #E31B6D;
+	background-color: #E31B6D;
 	border: 1px solid #E31B6D;
 }
 
@@ -301,19 +306,19 @@ Projects Section
 
 .project-languages li {
 	display: inline-block;
-    padding: 1px 4px;
-    font-size: 11px;
+	padding: 1px 4px;
+	font-size: 11px;
 	border-radius: 8px;
 }
 
 .front {
-    background-color: #ff4291;
-    color: white;
+	background-color: #ff4291;
+	color: white;
 }
 
-.back{
-    background-color: #3284ff;
-    color: white;
+.back {
+	background-color: #3284ff;
+	color: white;
 }
 
 /***********************************
@@ -325,13 +330,13 @@ Contact Section
 }
 
 #clip-path {
-    background-color: #161616;
+	background-color: #161616;
 	-webkit-clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 #contact-title {
-    color: #FFFFFF;
+	color: #FFFFFF;
 	border-bottom: 4px solid #ffffff;
 	margin-top: 92px;
 }
@@ -385,6 +390,7 @@ button:hover {
 	border: 1px solid #2E82FF;
 	background-color: #2E82FF;
 }
+
 /***********************************
 Footer Section
 ***********************************/
@@ -436,14 +442,14 @@ Footer Section
 #back-to-top {
 	position: relative;
 	padding: 0;
-	margin: 0;
-	top: -24px;
 }
 
 #back-to-top a {
+	position: absolute;
 	background-color: #E31B6D;
 	width: 48px;
 	height: 48px;
+	top: -24px;
 }
 
 .btt-up-arrow {
@@ -451,6 +457,7 @@ Footer Section
 	width: 18px;
 	height: 18px;
 }
+
 .back-to-top:hover>p {
 	background-color: rgb(245, 27, 109);
 }
