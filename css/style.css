@@ -153,22 +153,22 @@ Nav Section
 	stroke-miterlimit: 10;
 }
 
-#nav-bar {
+.nav-bar {
 	margin: 14px;
 }
 
-#nav-bar a {
+.nav-bar a {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 16px;
 	margin-left: 28px;
 }
 
-#nav-bar a:hover {
+.nav-bar a:hover {
 	color: #E31B6D;
 }
 
-#nav-bar a.active {
+.active {
 	color: #E31B6D;
 }
 
