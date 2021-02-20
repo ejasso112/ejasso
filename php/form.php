@@ -5,13 +5,13 @@
     $message = $_POST['message'];
 
     $email_from = 'admin@ejasso.com';
-    $email_subject = 'ejasso Contact Me';
-    $email_body = "User Name: $name.\n".
-                    "User Email: $visitor_email.\n".
-                    "User Subject: $subject.\n.".
-                    "User Message: $message.\n";
+    $email_subject = 'ejasso.com - Contact Me Form';
+    $email_body = "User Name: $name\n".
+                    "User Email: $visitor_email\n".
+                    "User Subject: $subject\n".
+                    "User Message: $message\n";
     
-    $to = 'mosefeh943@agilekz.com';
+    $to = 'eduardo.jasso.web@gmail.com';
     $headers = "From: $email_from \r\n";
     $headers .= "Reply-To: $visitor_email \r\n";
 

@@ -2,53 +2,43 @@
   Font Defaults
 *******************************/
 @font-face {
-  font-family: "CenturyGothic";
+  font-family: 'CenturyGothic';
   src: url("../fonts/CenturyGothic/CenturyGothic.eot");
-  src: url("../fonts/CenturyGothic/CenturyGothic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic") format("svg"),
-    url("../fonts/CenturyGothic/CenturyGothic.ttf") format("truetype"),
-    url("../fonts/CenturyGothic/CenturyGothic.woff") format("woff"),
-    url("../fonts/CenturyGothic/CenturyGothic.woff2") format("woff2");
+  src: url("../fonts/CenturyGothic/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic") format("svg"), url("../fonts/CenturyGothic/CenturyGothic.ttf") format("truetype"), url("../fonts/CenturyGothic/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
-#banner-button-container,
-#skill-groups-container,
-.individual-project-container,
-#back-to-top-container a,
-#social-links-container {
+#banner-button-container, #skill-groups-container, .individual-project-container, #back-to-top-container a, #social-links-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.skill-container > ul,
-#social-links-container a {
+.skill-container > ul, #social-links-container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*******************************
@@ -57,7 +47,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "CenturyGothic";
+  font-family: 'CenturyGothic';
 }
 
 body {
@@ -69,11 +59,11 @@ body .section {
 }
 
 body .main-section:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 body .main-section:nth-child(even) {
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
 }
 
 body .container {
@@ -83,14 +73,14 @@ body .container {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1600px;
 }
 
@@ -98,21 +88,21 @@ body h1 {
   margin: 48px 0px;
   padding: 12px 0;
   font-size: 40px;
-  color: #4a4a4a;
-  border-bottom: 4px solid #4a4a4a;
+  color: #4A4A4A;
+  border-bottom: 4px solid #4A4A4A;
   text-transform: uppercase;
 }
 
 body h2 {
   padding: 16px 0px;
   font-size: 28px;
-  color: #4a4a4a;
+  color: #4A4A4A;
   font-weight: normal;
 }
 
 body p {
   text-align: justify;
-  color: #4a4a4a;
+  color: #4A4A4A;
 }
 
 /***********************************
@@ -131,23 +121,21 @@ Banner Section
 #banner-container > svg {
   padding: 12px;
   max-width: 600px;
-  fill: #ffffff;
-  stroke: #ffffff;
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
   stroke-dasharray: 1500;
   -webkit-animation: animate 3s cubic-bezier(0.49, 0.08, 0.94, 0.59);
-  animation: animate 3s cubic-bezier(0.49, 0.08, 0.94, 0.59);
+          animation: animate 3s cubic-bezier(0.49, 0.08, 0.94, 0.59);
 }
 
 #banner-container > p {
   overflow: hidden;
   white-space: nowrap;
   font-size: 16px;
-  color: #ffffff;
+  color: #FFFFFF;
   border-right: 2px solid transparent;
-  -webkit-animation: typewriter 2s steps(50) 2s 1 normal both,
-    blinkTextCursor 700ms steps(50) 2.1s infinite normal;
-  animation: typewriter 2s steps(50) 2s 1 normal both,
-    blinkTextCursor 700ms steps(50) 2.1s infinite normal;
+  -webkit-animation: typewriter 2s steps(50) 2s 1 normal both, blinkTextCursor 700ms steps(50) 2.1s infinite normal;
+          animation: typewriter 2s steps(50) 2s 1 normal both, blinkTextCursor 700ms steps(50) 2.1s infinite normal;
 }
 
 #banner-button-container {
@@ -155,23 +143,23 @@ Banner Section
   padding: 8px;
   font-size: 22px;
   text-decoration: none;
-  border: 2px solid #ffffff;
+  border: 2px solid #FFFFFF;
   -webkit-animation: raise 5s ease forwards;
-  animation: raise 5s ease forwards;
+          animation: raise 5s ease forwards;
 }
 
 #banner-button-container > p {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 #banner-button-container > svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
   width: 16px;
 }
 
 #banner-button-container:hover {
-  border: 2px solid #2e82ff;
-  background-color: #2e82ff;
+  border: 2px solid #2E82FF;
+  background-color: #2E82FF;
 }
 
 /***********************************
@@ -184,23 +172,23 @@ Nav Section
   position: -webkit-sticky;
   position: sticky;
   background-color: #111111;
-  border-bottom: 3px solid #2e82ff;
+  border-bottom: 3px solid #2E82FF;
 }
 
 #nav-container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #nav-container > svg {
   width: 222px;
   margin: 8px 0;
-  fill: #ffffff;
+  fill: #FFFFFF;
   stroke-miterlimit: 10;
 }
 
@@ -208,23 +196,28 @@ Nav Section
   padding: 14px 0;
 }
 
-.nav-bar {
-  margin: 14px;
-}
-
-.nav-bar a {
+#nav-bar-container > a {
+  padding: 0 14px;
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 16px;
-  margin-left: 28px;
+  color: #FFFFFF;
 }
 
-.nav-bar a:hover {
-  color: #e31b6d;
+#nav-bar-container > a:first-of-type {
+  padding-left: 0;
 }
 
-.active {
-  color: #e31b6d;
+#nav-bar-container > a:last-of-type {
+  padding-right: 0;
+}
+
+#nav-bar-container > a:hover {
+  color: #E31B6D;
+}
+
+#nav-bar-container .active {
+  color: #E31B6D;
 }
 
 /***********************************
@@ -234,8 +227,8 @@ About Section
   width: 274px;
   height: 274px;
   border-radius: 137px;
-  background-color: #2e82ff;
-  border: 2px solid #2e82ff;
+  background-color: #2E82FF;
+  border: 2px solid #2E82FF;
 }
 
 #about-container > p {
@@ -244,11 +237,11 @@ About Section
 }
 
 #about-container > p > .know {
-  color: #2e82ff;
+  color: #2E82FF;
 }
 
 #about-container > p > .learn {
-  color: #e31b6d;
+  color: #E31B6D;
 }
 
 /***********************************
@@ -256,7 +249,7 @@ Skills Section
 ***********************************/
 #skill-groups-container {
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .skill-container {
@@ -266,17 +259,17 @@ Skills Section
 
 .skill-container > ul {
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 128px;
   width: 256px;
-  border: 1px solid #4a4a4a;
+  border: 1px solid #4A4A4A;
   border-radius: 12px;
   list-style-type: none;
 }
 
 .skill-container > ul li {
-  color: #4a4a4a;
+  color: #4A4A4A;
 }
 
 /***********************************
@@ -290,11 +283,11 @@ Projects Section
 .individual-project-container {
   padding: 32px 24px;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .project-left-container {
@@ -304,7 +297,7 @@ Projects Section
 }
 
 .project-left-container p {
-  color: #4a4a4a;
+  color: #4A4A4A;
   font-size: 16px;
   text-align: center;
 }
@@ -316,14 +309,14 @@ Projects Section
 
 .project-left-container:hover img {
   -webkit-animation: enlarge 150ms linear;
-  animation: enlarge 150ms linear;
+          animation: enlarge 150ms linear;
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .project-left-container:hover p {
   -webkit-animation: raise 250ms linear forwards;
-  animation: raise 250ms linear forwards;
+          animation: raise 250ms linear forwards;
 }
 
 .project-right-container {
@@ -332,32 +325,32 @@ Projects Section
 }
 
 .project-right-container p {
-  color: #4a4a4a;
+  color: #4A4A4A;
   font-size: 16px;
 }
 
 .project-right-container ul:first-of-type li {
   display: inline-block;
-  border: 1px solid #4a4a4a;
+  border: 1px solid #4A4A4A;
   border-radius: 8px;
 }
 
 .project-right-container ul:first-of-type li a {
   display: block;
-  color: #4a4a4a;
+  color: #4A4A4A;
   padding: 2px 8px;
   font-size: 12px;
   text-decoration: none;
 }
 
 .project-right-container ul:first-of-type li a:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .project-right-container ul:first-of-type li:hover {
-  color: #ffffff;
-  background-color: #e31b6d;
-  border: 1px solid #e31b6d;
+  color: #FFFFFF;
+  background-color: #E31B6D;
+  border: 1px solid #E31B6D;
 }
 
 .project-right-container ul:last-of-type li {
@@ -369,12 +362,12 @@ Projects Section
 
 .project-right-container ul:last-of-type li.front {
   background-color: #ff4291;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .project-right-container ul:last-of-type li.back {
   background-color: #3284ff;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 #more-info-container {
@@ -384,9 +377,9 @@ Projects Section
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0 0 24px -12px;
-  box-shadow: 0 0 24px -12px;
+          box-shadow: 0 0 24px -12px;
   border-radius: 24px;
 }
 
@@ -395,13 +388,13 @@ Contact Section
 ***********************************/
 #contact {
   padding: 0;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 #clip-path {
   background-color: #161616;
   -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
-  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 #contact-container {
@@ -409,13 +402,13 @@ Contact Section
 }
 
 #contact-container h1 {
-  color: #ffffff;
-  border-bottom: 4px solid #ffffff;
+  color: #FFFFFF;
+  border-bottom: 4px solid #FFFFFF;
 }
 
 #contact-container h2 {
   padding: 0 0 32px 0;
-  color: #2e82ff;
+  color: #2E82FF;
 }
 
 #contact-container form {
@@ -424,14 +417,14 @@ Contact Section
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 12px 0;
 }
 
@@ -441,7 +434,7 @@ Contact Section
   padding: 12px 8px;
   width: 484px;
   background-color: #111111;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 15px;
   border: none;
   outline: none;
@@ -454,14 +447,14 @@ Contact Section
   height: 38px;
   background-color: #161616;
   font-size: 14px;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
   text-transform: uppercase;
 }
 
 #contact-container form button:hover {
-  border: 1px solid #2e82ff;
-  background-color: #2e82ff;
+  border: 1px solid #2E82FF;
+  background-color: #2E82FF;
 }
 
 #back-to-top-container {
@@ -473,20 +466,20 @@ Contact Section
   top: -24px;
   width: 48px;
   height: 48px;
-  background-color: #e31b6d;
+  background-color: #E31B6D;
 }
 
 #back-to-top-container a svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
   width: 18px;
   height: 18px;
 }
 
 #back-to-top-container a:hover {
   -webkit-animation: shrink 100ms linear;
-  animation: shrink 100ms linear;
+          animation: shrink 100ms linear;
   -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 /***********************************
@@ -499,7 +492,7 @@ Footer Section
 }
 
 #footer-container span {
-  color: #e31b6d;
+  color: #E31B6D;
 }
 
 #social-links-container {
@@ -518,20 +511,20 @@ Footer Section
 #social-links-container a svg {
   width: 24px;
   height: 24px;
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 #social-links-container a:hover {
-  background-color: #2e82ff;
+  background-color: #2E82FF;
   -webkit-animation: shrink 250ms linear;
-  animation: shrink 250ms linear;
+          animation: shrink 250ms linear;
   -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 #social-links-container a:hover svg {
   -webkit-animation: raise-social 250ms linear forwards;
-  animation: raise-social 250ms linear forwards;
+          animation: raise-social 250ms linear forwards;
 }
 
 @media only screen and (max-width: 500px) {
@@ -629,12 +622,12 @@ Footer Section
   0% {
     opacity: 0;
     -webkit-transform: translateY(400px);
-    transform: translateY(400px);
+            transform: translateY(400px);
   }
   80% {
     opacity: 0;
     -webkit-transform: translateY(400px);
-    transform: translateY(400px);
+            transform: translateY(400px);
   }
 }
 
@@ -642,88 +635,88 @@ Footer Section
   0% {
     opacity: 0;
     -webkit-transform: translateY(400px);
-    transform: translateY(400px);
+            transform: translateY(400px);
   }
   80% {
     opacity: 0;
     -webkit-transform: translateY(400px);
-    transform: translateY(400px);
+            transform: translateY(400px);
   }
 }
 
 @-webkit-keyframes shrink {
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 
 @keyframes shrink {
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 
 @-webkit-keyframes enlarge {
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
   100% {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
 @keyframes enlarge {
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
   100% {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
 @-webkit-keyframes raise-social {
   30% {
     -webkit-transform: translateY(50px);
-    transform: translateY(50px);
+            transform: translateY(50px);
   }
   50% {
     opacity: 0;
     -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   70% {
     -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
+            transform: translateY(-50px);
   }
 }
 
 @keyframes raise-social {
   30% {
     -webkit-transform: translateY(50px);
-    transform: translateY(50px);
+            transform: translateY(50px);
   }
   50% {
     opacity: 0;
     -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   70% {
     -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
+            transform: translateY(-50px);
   }
 }
 
@@ -736,7 +729,7 @@ Footer Section
   }
   50% {
     -webkit-transform: translateY(40px);
-    transform: translateY(40px);
+            transform: translateY(40px);
   }
 }
 /*# sourceMappingURL=style.css.map */

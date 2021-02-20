@@ -1,0 +1,203 @@
+/***************************
+Global
+***************************/
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/***Tag Defaults**/
+body {
+    background-color: #333333;
+}
+
+h1 {
+    color: #FFFFFF;
+    padding: 0 12px 0 12px;
+}
+
+h2 {
+    font-size: 28px;
+    padding-bottom: 48px;
+}
+
+h3 {
+    font-size: 22px;
+    padding: 22px 0 4px 0;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+ul,
+ol {
+    line-height: 1.5;
+    padding: 0 18px 0 18px;
+    font-size: 20px;
+}
+
+/***Class Defaults**/
+.section {
+    padding: 92px;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+}
+
+.content {
+    width: 100%;
+}
+
+.pictures {
+    padding-top: 42px;
+    text-align: center;
+}
+
+.content a {
+    color: #3FA9F5;
+}
+
+.by {
+    padding-top: 24px;
+}
+
+.play {
+    width: 80%;
+    padding-top: 52px;
+    fill: #3FA9F5;
+}
+
+/***************************
+Header
+***************************/
+#nav {
+    background-color: #333333;
+    padding: 0px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    border-bottom: 3px solid rgb(90, 90, 90);
+}
+
+#nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-title {
+    display: inherit;
+    align-items: inherit;
+    padding: 0 12px 0 12px;
+}
+
+#title-svg {
+    padding: 12px 0 12px 0;
+    fill: #3FA9F5;
+    height: 32px;
+}
+
+.site-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    padding: 0 12px 0 12px;
+}
+
+a.active {
+    color: #3FA9F5;
+}
+
+a:hover {
+    color: #3FA9F5;
+}
+
+/***************************
+Basic Info
+***************************/
+#basic-info {
+    background-color: #3FA9F5;
+    padding: 0;
+}
+
+#basic-info-container {
+    flex-direction: row;
+}
+
+#basic-info-content {
+    padding-left: 14px;
+    color: #FFFFFF;
+    width: 70%;
+}
+
+#header-img {
+    background: url("../img/maria.png") no-repeat center;
+    background-size: cover;
+    margin-left: auto;
+    width: 100%;
+    height: 60vw;
+    max-height: 650px;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/***************************
+Overview
+***************************/
+#overview {
+    background-color: #FFFFFF;
+}
+
+/***************************
+General Science
+***************************/
+#general-science {
+    background-color: #3FA9F5;
+    color: #FFFFFF;
+}
+
+/***************************
+Maria Science
+***************************/
+#maria-science {
+    background-color: #FFFFFF;
+}
+
+/***************************
+Population
+***************************/
+#population {
+    background-color: #3FA9F5;
+    color: #FFFFFF;
+}
+
+/***************************
+Economy
+***************************/
+#economy {
+    background-color: #FFFFFF;
+}
+
+/***************************
+Statistics
+***************************/
+#statistics {
+    background-color: #3FA9F5;
+    color: #FFFFFF;
+}
+
+/***************************
+Sources
+***************************/
+#sources {
+    background-color: #333333;
+    color: #FFFFFF;
+}
