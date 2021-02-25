@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Variables */
+$backgroundPrimary: #171717;
+$backgroundSecondary: #e8e8e8;
+$backgroundTertiary: #151515;
+$colorLightPrimary: #e8e8e8;
+$colorLightSecondary: #e2e2e2;
+$colorLightTertiary: #8d8d8d;
+$colorLightTertiaryAlt: #b9b9b9;
+$colorDarkPrimary: #171717;
+$colorDarkSecondary: #4d4d4d;
+$colorDarkTertiary: #404040;
+$highlightPrimary: #e31b6d;
+$highlightSecondary: #2e82ff;
+
+/* Global Defaults*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Tag Defaults*/
+html {
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 82px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Class Defaults */
+.container {
+  padding: 102px 102px;
+}
+
+.content {
+  padding-bottom: 24px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+
+  &__container {
+    z-index: 0;
+    position: relative;
+    background-color: rgba($color: #0d0d0d, $alpha: 0.15);
+
+    &::before {
+      content: "";
+      display: block;
+      height: 45vh;
+    }
+
+    & > svg {
+      left: 0;
+      position: absolute;
+      fill: rgba($color: #0d0d0d, $alpha: 0.15);
+    }
+  }
+}
+
+.button {
+  border: 2px solid;
+  background: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &--primary1 {
+    padding: 12px 36px;
+    border-color: $highlightPrimary;
+    border-radius: 16px;
+    color: $highlightPrimary;
+    font-size: 15px;
+    fill: $highlightPrimary;
+
+    > svg {
+      padding-left: 8px;
+      height: 14px;
+    }
+  }
+
+  &--secondary1 {
+    border: none;
+    padding: 12px 36px;
+    border-radius: 16px;
+    color: $colorLightTertiaryAlt;
+    font-size: 15px;
+
+    svg {
+      padding-left: 8px;
+      height: 14px;
+    }
+  }
+
+  &--primary2 {
+    border-color: $highlightPrimary;
+    border-radius: 2px;
+    color: $highlightPrimary;
+    fill: $highlightPrimary;
+  }
+
+  &--primary3 {
+    border-color: $highlightSecondary;
+    border-radius: 2px;
+    color: $highlightSecondary;
+    fill: $highlightSecondary;
+  }
+}
+/* Nav */
+.nav {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  pointer-events: none;
+  &__container,
+  &__side {
+    pointer-events: visible;
+    position: sticky;
+    top: 0;
+  }
+}
+
+/* Header */
+.header {
+  z-index: 1;
+  position: relative;
+  height: 100vh;
+  background-color: $backgroundPrimary;
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+  }
+
+  &__heading {
+    color: $colorLightPrimary;
+    margin-left: -6px;
+  }
+
+  &__sub {
+    color: $colorLightTertiary;
+    padding-bottom: 48px;
+  }
+
+  > svg {
+    width: 110vh;
+    height: 110vh;
+    position: absolute;
+    transform: rotate(-30deg);
+    top: -0vh;
+    right: -12vh;
+    z-index: 1;
+    fill: $colorDarkPrimary;
+    filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.3));
+  }
+
+  &__waveTop {
+    &__container {
+      &::before {
+        height: 40vh;
+      }
+    }
+  }
+
+  &__waveLow {
+    &__container {
+      &::before {
+        height: calc(40vh + 108px);
+      }
+    }
+  }
+}
+
+/* About */
+.about {
+  background-color: $backgroundSecondary;
+}
+
+/* Skills */
+.skills {
+  background-color: $backgroundPrimary;
+}
+
+/* Projects */
+.projects {
+  background-color: $backgroundSecondary;
+}
+
+/* Contact */
+.contact {
+  background-color: $backgroundPrimary;
+}
+
+/* Footer */
+.Footer {
+  background-color: $backgroundTertiary;
+}

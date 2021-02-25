@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Variables */
+/* Global Defaults*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Tag Defaults*/
+html {
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 82px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Class Defaults */
+.container {
+  padding: 102px 102px;
+}
+
+.content {
+  padding-bottom: 24px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.wave__container {
+  z-index: 0;
+  position: relative;
+  background-color: rgba(13, 13, 13, 0.15);
+}
+
+.wave__container::before {
+  content: "";
+  display: block;
+  height: 45vh;
+}
+
+.wave__container > svg {
+  left: 0;
+  position: absolute;
+  fill: rgba(13, 13, 13, 0.15);
+}
+
+.button {
+  border: 2px solid;
+  background: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button--primary1 {
+  padding: 12px 36px;
+  border-color: #e31b6d;
+  border-radius: 16px;
+  color: #e31b6d;
+  font-size: 15px;
+  fill: #e31b6d;
+}
+
+.button--primary1 > svg {
+  padding-left: 8px;
+  height: 14px;
+}
+
+.button--secondary1 {
+  border: none;
+  padding: 12px 36px;
+  border-radius: 16px;
+  color: #b9b9b9;
+  font-size: 15px;
+}
+
+.button--secondary1 svg {
+  padding-left: 8px;
+  height: 14px;
+}
+
+.button--primary2 {
+  border-color: #e31b6d;
+  border-radius: 2px;
+  color: #e31b6d;
+  fill: #e31b6d;
+}
+
+.button--primary3 {
+  border-color: #2e82ff;
+  border-radius: 2px;
+  color: #2e82ff;
+  fill: #2e82ff;
+}
+
+/* Nav */
+.nav {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  pointer-events: none;
+}
+
+.nav__container, .nav__side {
+  pointer-events: visible;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* Header */
+.header {
+  z-index: 1;
+  position: relative;
+  height: 100vh;
+  background-color: #171717;
+}
+
+.header__container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.header__heading {
+  color: #e8e8e8;
+  margin-left: -6px;
+}
+
+.header__sub {
+  color: #8d8d8d;
+  padding-bottom: 48px;
+}
+
+.header > svg {
+  width: 110vh;
+  height: 110vh;
+  position: absolute;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  top: -0vh;
+  right: -12vh;
+  z-index: 1;
+  fill: #171717;
+  -webkit-filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.3));
+}
+
+.header__waveTop__container::before {
+  height: 40vh;
+}
+
+.header__waveLow__container::before {
+  height: calc(40vh + 108px);
+}
+
+/* About */
+.about {
+  background-color: #e8e8e8;
+}
+
+/* Skills */
+.skills {
+  background-color: #171717;
+}
+
+/* Projects */
+.projects {
+  background-color: #e8e8e8;
+}
+
+/* Contact */
+.contact {
+  background-color: #171717;
+}
+
+/* Footer */
+.Footer {
+  background-color: #151515;
+}
+/*# sourceMappingURL=style.css.map */
