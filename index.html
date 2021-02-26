@@ -22,7 +22,7 @@
             </a>
 
             <div class="nav__links">
-                <a class="nav__link" href="#home">home</a>
+                <a class="nav__link nav__link--active" href="#home">home</a>
                 <a class="nav__link" href="#about">about</a>
                 <a class="nav__link" href="#skills">skills</a>
                 <a class="nav__link" href="#projects">projects</a>
@@ -88,15 +88,16 @@
         </svg>
 
         <div class="header__waveTop wave">
-            <div class="header__waveTop__container wave__container">
+            <div class="header__waveTop__container wave__container wave__container--dark">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 395">
                     <path class="a"
                         d="M1920,0V53.65c-243.39-29.94-517.59-102.43-773,2.64-124.63,51.28-199.68,114.36-333.9,189.94C561.33,388,403.33,395,0,395V0Z" />
                 </svg>
             </div>
         </div>
+
         <div class="header__waveLow wave">
-            <div class="header__waveLow__container wave__container">
+            <div class="header__waveLow__container wave__container wave__container--dark">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 395">
                     <path class="a"
                         d="M1920,0V53.65c-243.39-29.94-517.59-102.43-773,2.64-124.63,51.28-199.68,114.36-333.9,189.94C561.33,388,403.33,395,0,395V0Z" />
@@ -114,13 +115,34 @@
                     <p class="about__sub">Hello! My name is Eduardo and I'm a Front-End Web Developer.</p>
                     <p class="about__paragraph"> I enjoy looking at modern designs for inspiration and apply them to my
                         projects to make <span>clean</span>, <span>modern</span>, <span>minimalistic</span> websites.
-                        </br>The <span>process</span> of making a website from start to finish is
+                    </p>
+                    <p class="about__paragraph">The <span>process</span> of making a website from start to finish is
                         <span>mesmerizing</span>, just seeing a
                         low-fidelity wireframe become a full blown web application is <span>amazing</span>.
-                        </br>Love getting into the <span>logic</span> and <span>structure</span> of coding and strive to
+                    </p>
+                    <p class="about__paragraph">Love getting into the <span>logic</span> and <span>structure</span> of
+                        coding and strive to
                         find ways to write more
                         <span>elegant</span> and <span>semantic</span> code.
                     </p>
+                </div>
+            </div>
+
+            <div class="about__waveTop wave wave--verticalFlip">
+                <div class="about__waveTop__container wave__container wave__container--light">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 395">
+                        <path class="a"
+                            d="M1920,0V53.65c-243.39-29.94-517.59-102.43-773,2.64-124.63,51.28-199.68,114.36-333.9,189.94C561.33,388,403.33,395,0,395V0Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="about__waveLow wave wave--verticalFlip">
+                <div class="about__waveLow__container wave__container wave__container--light">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 395">
+                        <path class="a"
+                            d="M1920,0V53.65c-243.39-29.94-517.59-102.43-773,2.64-124.63,51.28-199.68,114.36-333.9,189.94C561.33,388,403.33,395,0,395V0Z" />
+                    </svg>
                 </div>
             </div>
         </section>
@@ -129,9 +151,9 @@
             <div class="skills__container container">
                 <div class="skills__content">
                     <h2 class="skills__heading">technological skills</h2>
-                    <div class="skills__block">
+                    <div class="skills__block content">
                         <div class="skills__card">
-                            <svg xmlns="http://www.w3.org/2000/svg" width=24 height=24 viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M24,0V12A12,12,0,0,1,13.25,23.94V19.39A7.49,7.49,0,0,0,19.5,12V0ZM12,4.5h5V0H12a12,12,0,0,0-1.25,23.94V19.39a7.47,7.47,0,0,1-5.9-5.14h5.9V9.75H4.85A7.51,7.51,0,0,1,12,4.5Z" />
                             </svg>
@@ -150,6 +172,41 @@
                                     d="M24,0V12A12,12,0,0,1,13.25,23.94V19.39A7.49,7.49,0,0,0,19.5,12V0ZM12,4.5h5V0H12a12,12,0,0,0-1.25,23.94V19.39a7.47,7.47,0,0,1-5.9-5.14h5.9V9.75H4.85A7.51,7.51,0,0,1,12,4.5Z" />
                             </svg>
                             <p class="skills__card__name">JAVASCRIPT</p>
+                        </div>
+                        <div class="skills__card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width=24 height=24 viewBox="0 0 24 24">
+                                <path
+                                    d="M24,0V12A12,12,0,0,1,13.25,23.94V19.39A7.49,7.49,0,0,0,19.5,12V0ZM12,4.5h5V0H12a12,12,0,0,0-1.25,23.94V19.39a7.47,7.47,0,0,1-5.9-5.14h5.9V9.75H4.85A7.51,7.51,0,0,1,12,4.5Z" />
+                            </svg>
+                            <p class="skills__card__name">JQUERY</p>
+                        </div>
+                        <div class="skills__card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width=24 height=24 viewBox="0 0 24 24">
+                                <path
+                                    d="M24,0V12A12,12,0,0,1,13.25,23.94V19.39A7.49,7.49,0,0,0,19.5,12V0ZM12,4.5h5V0H12a12,12,0,0,0-1.25,23.94V19.39a7.47,7.47,0,0,1-5.9-5.14h5.9V9.75H4.85A7.51,7.51,0,0,1,12,4.5Z" />
+                            </svg>
+                            <p class="skills__card__name">JQUERY</p>
+                        </div>
+                        <div class="skills__card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width=24 height=24 viewBox="0 0 24 24">
+                                <path
+                                    d="M24,0V12A12,12,0,0,1,13.25,23.94V19.39A7.49,7.49,0,0,0,19.5,12V0ZM12,4.5h5V0H12a12,12,0,0,0-1.25,23.94V19.39a7.47,7.47,0,0,1-5.9-5.14h5.9V9.75H4.85A7.51,7.51,0,0,1,12,4.5Z" />
+                            </svg>
+                            <p class="skills__card__name">JQUERY</p>
+                        </div>
+                        <div class="skills__card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width=24 height=24 viewBox="0 0 24 24">
+                                <path
+                                    d="M24,0V12A12,12,0,0,1,13.25,23.94V19.39A7.49,7.49,0,0,0,19.5,12V0ZM12,4.5h5V0H12a12,12,0,0,0-1.25,23.94V19.39a7.47,7.47,0,0,1-5.9-5.14h5.9V9.75H4.85A7.51,7.51,0,0,1,12,4.5Z" />
+                            </svg>
+                            <p class="skills__card__name">JQUERY</p>
+                        </div>
+                        <div class="skills__card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width=24 height=24 viewBox="0 0 24 24">
+                                <path
+                                    d="M24,0V12A12,12,0,0,1,13.25,23.94V19.39A7.49,7.49,0,0,0,19.5,12V0ZM12,4.5h5V0H12a12,12,0,0,0-1.25,23.94V19.39a7.47,7.47,0,0,1-5.9-5.14h5.9V9.75H4.85A7.51,7.51,0,0,1,12,4.5Z" />
+                            </svg>
+                            <p class="skills__card__name">JQUERY</p>
                         </div>
                         <div class="skills__card">
                             <svg xmlns="http://www.w3.org/2000/svg" width=24 height=24 viewBox="0 0 24 24">

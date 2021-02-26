@@ -16,18 +16,19 @@ html {
 }
 
 h1 {
-  font-size: 82px;
   font-weight: 700;
+  font-size: 82px;
 }
 
 h2 {
-  font-size: 64px;
+  padding-bottom: 8px;
   font-weight: 900;
+  font-size: 64px;
 }
 
 h3 {
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
 }
 
 p {
@@ -35,13 +36,13 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 /* Class Defaults */
 .container {
-  padding: 102px 102px;
+  padding: 102px 102px 128px 102px;
 }
 
 .content {
@@ -58,34 +59,58 @@ a {
 }
 
 .wave {
+  z-index: 0;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  z-index: 0;
+  left: 0;
 }
 
 .wave__container {
   z-index: 0;
   position: relative;
-  background-color: rgba(13, 13, 13, 0.15);
 }
 
 .wave__container::before {
-  content: "";
   display: block;
   height: 45vh;
+  content: "";
 }
 
 .wave__container > svg {
-  left: 0;
   position: absolute;
+  left: 0;
+}
+
+.wave__container--dark {
+  background-color: rgba(13, 13, 13, 0.15);
+}
+
+.wave__container--dark > svg {
   fill: rgba(13, 13, 13, 0.15);
 }
 
+.wave__container--light {
+  background-color: rgba(13, 13, 13, 0.025);
+}
+
+.wave__container--light > svg {
+  fill: rgba(13, 13, 13, 0.025);
+}
+
+.wave--verticalFlip {
+  bottom: 0;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+.wave--horizontalFlip {
+  bottom: 0;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
 .button {
-  border: 2px solid;
-  background: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -95,6 +120,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 2px solid;
+  background: none;
 }
 
 .button--primary1 {
@@ -107,21 +134,21 @@ a {
 }
 
 .button--primary1 > svg {
-  padding-left: 8px;
   height: 14px;
+  padding-left: 8px;
 }
 
 .button--secondary1 {
-  border: none;
   padding: 12px 36px;
+  border: none;
   border-radius: 16px;
   color: #b9b9b9;
   font-size: 15px;
 }
 
 .button--secondary1 svg {
-  padding-left: 8px;
   height: 14px;
+  padding-left: 8px;
 }
 
 .button--primary2 {
@@ -140,55 +167,146 @@ a {
 
 /* Nav */
 .nav {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
+  width: 100%;
   height: 100%;
   pointer-events: none;
 }
 
-.nav__container, .nav__side {
-  pointer-events: visible;
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 24px 0 24px;
+  pointer-events: visible;
+}
+
+.nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+}
+
+.nav__logo > svg {
+  width: 42px;
+  height: 42px;
+  fill: #e8e8e8;
+}
+
+.nav__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  padding: 0 24px;
+  color: #e8e8e8;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.nav__link--active {
+  border-bottom: 4px solid #e31b6d;
+  color: #e31b6d;
+  font-weight: 700;
+}
+
+.nav__side {
+  position: -webkit-sticky;
+  position: sticky;
+  float: right;
+  top: calc(50vh - 136px);
+  pointer-events: visible;
+}
+
+.nav__socials {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 26px;
+  border: 3px solid #e31b6d;
+  margin: 8px 24px;
+}
+
+.nav__social > svg {
+  width: 24px;
+  height: 24px;
+  fill: #e31b6d;
 }
 
 /* Header */
 .header {
-  z-index: 1;
+  z-index: 2;
   position: relative;
   height: 100vh;
   background-color: #171717;
 }
 
 .header__container {
-  position: relative;
   z-index: 2;
+  position: relative;
   height: 100%;
 }
 
 .header__heading {
-  color: #e8e8e8;
   margin-left: -6px;
+  color: #e8e8e8;
 }
 
 .header__sub {
-  color: #8d8d8d;
   padding-bottom: 48px;
+  color: #8d8d8d;
 }
 
 .header > svg {
+  z-index: 1;
+  position: absolute;
+  top: -4vh;
+  right: -12vh;
   width: 110vh;
   height: 110vh;
-  position: absolute;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-  top: -0vh;
-  right: -12vh;
-  z-index: 1;
-  fill: #171717;
   -webkit-filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.3));
           filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.3));
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  fill: #171717;
 }
 
 .header__waveTop__container::before {
@@ -201,12 +319,109 @@ a {
 
 /* About */
 .about {
+  z-index: 0;
+  position: relative;
   background-color: #e8e8e8;
+}
+
+.about__container {
+  z-index: 1;
+  position: relative;
+}
+
+.about__sub {
+  padding-bottom: 48px;
+  color: #4d4d4d;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.about__paragraph {
+  max-width: 680px;
+  padding-bottom: 18px;
+  color: #404040;
+}
+
+.about__paragraph > span {
+  color: #2e82ff;
+}
+
+.about__waveTop__container::before {
+  height: 48px;
+}
+
+.about__waveLow__container::before {
+  height: calc(48px + 108px);
 }
 
 /* Skills */
 .skills {
+  z-index: 0;
+  position: relative;
   background-color: #171717;
+}
+
+.skills__heading {
+  padding-bottom: 64px;
+  color: #e8e8e8;
+}
+
+.skills__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 64px;
+}
+
+.skills__block::before {
+  width: 0;
+  padding-bottom: 100%;
+  content: "";
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+}
+
+.skills__block > *:first-child {
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+}
+
+.skills__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 16px;
+  background: #171717;
+  -webkit-box-shadow: 0px 6px 16px rgba(10, 10, 10, 0.5);
+          box-shadow: 0px 6px 16px rgba(10, 10, 10, 0.5);
+}
+
+.skills__card > svg {
+  width: 60%;
+  height: 60%;
+}
+
+.skills__card__name {
+  padding-top: 10%;
+  color: #e8e8e8;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 /* Projects */
