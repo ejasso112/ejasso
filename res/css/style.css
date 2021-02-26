@@ -13,6 +13,7 @@
 html {
   position: relative;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -163,6 +164,14 @@ a {
   border-radius: 2px;
   color: #2e82ff;
   fill: #2e82ff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+}
+
+.button--primary3 > svg {
+  height: 24px;
+  margin-right: 8px;
 }
 
 /* Nav */
@@ -175,6 +184,9 @@ a {
 }
 
 .nav__container {
+  background-color: rgba(21, 21, 21, 0.9);
+  -webkit-box-shadow: 0px 4px 8px rgba(13, 13, 13, 0.5);
+          box-shadow: 0px 4px 8px rgba(13, 13, 13, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,12 +245,16 @@ a {
 .nav__side {
   position: -webkit-sticky;
   position: sticky;
+  background-color: rgba(21, 21, 21, 0.9);
+  -webkit-box-shadow: 0px 4px 8px rgba(13, 13, 13, 0.5);
+          box-shadow: 0px 4px 8px rgba(13, 13, 13, 0.5);
   float: right;
   top: calc(50vh - 136px);
   pointer-events: visible;
 }
 
 .nav__socials {
+  padding: 18px 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -269,6 +285,39 @@ a {
   width: 24px;
   height: 24px;
   fill: #e31b6d;
+}
+
+.nav__scroll {
+  position: fixed;
+  background-color: rgba(21, 21, 21, 0.9);
+  -webkit-box-shadow: 0px 4px 8px rgba(13, 13, 13, 0.5);
+          box-shadow: 0px 4px 8px rgba(13, 13, 13, 0.5);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  top: calc(100vh);
+  right: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  pointer-events: visible;
+}
+
+.nav__scroll__down {
+  height: 52px;
+  padding: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__scroll__down > svg {
+  fill: #e31b6d;
+  height: 14px;
 }
 
 /* Header */
@@ -431,11 +480,130 @@ a {
 
 /* Contact */
 .contact {
+  z-index: 0;
+  position: relative;
   background-color: #171717;
 }
 
-/* Footer */
-.Footer {
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__heading {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #e8e8e8;
+  padding-bottom: 64px;
+}
+
+.contact__sub {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 32px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2e82ff;
+}
+
+.contact__field > input,
+.contact__field > textarea {
   background-color: #151515;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  color: #e2e2e2;
+  margin: 0 2px 24px 2px;
+  padding: 12px 8px;
+  width: 484px;
+  border: none;
+  outline: none;
+}
+
+.contact__submit {
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+/* Footer */
+.footer {
+  background-color: #151515;
+  color: #e8e8e8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__container {
+  max-width: 1400px;
+  padding-bottom: 12px;
+}
+
+.footer__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 102px 172px;
+      grid-template-columns: 1fr 102px 172px;
+  gap: 48px;
+}
+
+.footer__heading {
+  padding-bottom: 10px;
+}
+
+.footer__desc {
+  color: #e2e2e2;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 300;
+  padding: 6px 0;
+}
+
+.footer__link {
+  color: #e2e2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 0;
+  margin-bottom: 4px;
+}
+
+.footer__link > svg {
+  fill: #e2e2e2;
+  margin-right: 16px;
+}
+
+.footer__copy {
+  text-align: center;
+  padding-top: 64px;
+  text-transform: uppercase;
+  color: #c7c7c7;
+  font-size: 13px;
+}
+
+.footer__copy > span {
+  color: #e31b6d;
 }
 /*# sourceMappingURL=style.css.map */

@@ -26,6 +26,7 @@ $highlightSecondary: #2e82ff;
 html {
   position: relative;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -163,6 +164,14 @@ a {
     border-radius: 2px;
     color: $highlightSecondary;
     fill: $highlightSecondary;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 24px;
+
+    > svg {
+      height: 24px;
+      margin-right: 8px;
+    }
   }
 }
 /* Nav */
@@ -174,6 +183,8 @@ a {
   pointer-events: none;
 
   &__container {
+    background-color: rgba($color: $backgroundTertiary, $alpha: 0.9);
+    box-shadow: 0px 4px 8px rgba($color: #0d0d0d, $alpha: 0.5);
     display: flex;
     position: sticky;
     top: 0;
@@ -214,6 +225,8 @@ a {
 
   &__side {
     position: sticky;
+    background-color: rgba($color: $backgroundTertiary, $alpha: 0.9);
+    box-shadow: 0px 4px 8px rgba($color: #0d0d0d, $alpha: 0.5);
     float: right;
     top: calc(50vh - 136px);
     pointer-events: visible;
@@ -222,7 +235,7 @@ a {
   &__socials {
     // background: $backgroundTertiary;
     // box-shadow: 0 8px 16px rgba($color: #000000, $alpha: 0.3);
-    // padding: 8px 20px 8px 20px;
+    padding: 18px 0;
     display: inline-flex;
     flex-direction: column;
     // border-radius: 4px 0 0 4px;
@@ -244,6 +257,30 @@ a {
       width: 24px;
       height: 24px;
       fill: $highlightPrimary;
+    }
+  }
+
+  &__scroll {
+    position: fixed;
+    background-color: rgba($color: $backgroundTertiary, $alpha: 0.9);
+    box-shadow: 0px 4px 8px rgba($color: #0d0d0d, $alpha: 0.5);
+    transform-origin: top right;
+    top: calc(100vh);
+    right: 0;
+    transform: rotate(90deg);
+    pointer-events: visible;
+
+    &__down {
+      height: 52px;
+      padding: 0 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > svg {
+        fill: $highlightPrimary;
+        height: 14px;
+      }
     }
   }
 }
@@ -405,10 +442,103 @@ a {
 
 /* Contact */
 .contact {
+  z-index: 0;
+  position: relative;
   background-color: $backgroundPrimary;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    align-self: flex-start;
+    color: $colorLightPrimary;
+    padding-bottom: 64px;
+  }
+
+  &__sub {
+    align-self: center;
+    padding-bottom: 32px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $highlightSecondary;
+  }
+
+  &__field > input,
+  &__field > textarea {
+    background-color: $backgroundTertiary;
+    box-shadow: 0 6px 12px rgba($color: #000000, $alpha: 0.25);
+    color: $colorLightSecondary;
+    margin: 0 2px 24px 2px;
+    padding: 12px 8px;
+    width: 484px;
+    border: none;
+    outline: none;
+  }
+
+  &__submit {
+    cursor: pointer;
+    align-self: flex-end;
+  }
 }
 
 /* Footer */
-.Footer {
+.footer {
   background-color: $backgroundTertiary;
+  color: $colorLightPrimary;
+  justify-content: center;
+  &__container {
+    max-width: 1400px;
+    padding-bottom: 12px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 102px 172px;
+    gap: 48px;
+  }
+
+  &__heading {
+    padding-bottom: 10px;
+  }
+
+  &__desc {
+    color: $colorLightSecondary;
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 300;
+    padding: 6px 0;
+  }
+
+  &__link {
+    color: $colorLightSecondary;
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    margin-bottom: 4px;
+
+    & > svg {
+      fill: $colorLightSecondary;
+      margin-right: 16px;
+    }
+  }
+
+  &__copy {
+    text-align: center;
+    padding-top: 64px;
+    text-transform: uppercase;
+    color: #c7c7c7;
+    font-size: 13px;
+
+    & > span {
+      color: $highlightPrimary;
+    }
+  }
 }
