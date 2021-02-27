@@ -137,6 +137,18 @@ a {
       height: 14px;
       padding-left: 8px;
     }
+
+    &:hover {
+      transition: ease-in 192ms;
+      background-color: $highlightPrimary;
+      color: $colorLightPrimary;
+
+      > svg {
+        transition: ease-in 192ms;
+
+        fill: $colorLightPrimary;
+      }
+    }
   }
 
   &--secondary1 {
@@ -150,6 +162,11 @@ a {
       height: 14px;
       padding-left: 8px;
     }
+
+    &:hover {
+      transition: ease-in 192ms;
+      color: $colorLightPrimary;
+    }
   }
 
   &--primary2 {
@@ -157,6 +174,30 @@ a {
     border-radius: 2px;
     color: $highlightPrimary;
     fill: $highlightPrimary;
+
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 14px;
+
+    svg {
+      height: 14px;
+      padding-right: 8px;
+    }
+  }
+
+  &--secondary2 {
+    border: none;
+    color: $colorDarkSecondary;
+    fill: $colorDarkSecondary;
+
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 14px;
+
+    svg {
+      height: 14px;
+      padding-right: 8px;
+    }
   }
 
   &--primary3 {
@@ -174,6 +215,25 @@ a {
     }
   }
 }
+
+.ball {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+
+  &--green {
+    background-color: #28ca41;
+  }
+
+  &--yellow {
+    background-color: #ffbd2e;
+  }
+
+  &--red {
+    background-color: #ff5f57;
+  }
+}
+
 /* Nav */
 .nav {
   z-index: 3;
@@ -221,6 +281,21 @@ a {
       color: $highlightPrimary;
       font-weight: 700;
     }
+
+    &::before {
+      display: block;
+      content: attr(title);
+      font-weight: bold;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+
+    &:hover {
+      transition: ease-in 192ms;
+      color: $highlightPrimary;
+      text-shadow: 0 0 0.01px $highlightPrimary;
+    }
   }
 
   &__side {
@@ -228,17 +303,14 @@ a {
     background-color: rgba($color: $backgroundTertiary, $alpha: 0.9);
     box-shadow: 0px 4px 8px rgba($color: #0d0d0d, $alpha: 0.5);
     float: right;
-    top: calc(50vh - 136px);
+    top: calc(50vh - 144px);
     pointer-events: visible;
   }
 
   &__socials {
-    // background: $backgroundTertiary;
-    // box-shadow: 0 8px 16px rgba($color: #000000, $alpha: 0.3);
-    padding: 18px 0;
+    padding: 8px 0;
     display: inline-flex;
     flex-direction: column;
-    // border-radius: 4px 0 0 4px;
   }
 
   &__social {
@@ -249,14 +321,22 @@ a {
     height: 52px;
     border-radius: 26px;
     border: 3px solid $highlightPrimary;
-    // background-color: $backgroundTertiary;
-    margin: 8px 24px;
-    // box-shadow: 0 0px 12px rgba($color: $highlightPrimary, $alpha: 0.2);
+    margin: 8px 16px;
 
     & > svg {
       width: 24px;
       height: 24px;
       fill: $highlightPrimary;
+    }
+
+    &:hover {
+      transition: ease-in 192ms;
+      background-color: $highlightPrimary;
+
+      & > svg {
+        transition: ease-in 192ms;
+        fill: $colorLightPrimary;
+      }
     }
   }
 
@@ -395,7 +475,7 @@ a {
 
   &__block {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
     grid-auto-rows: 1fr;
     gap: 64px;
 
@@ -438,6 +518,63 @@ a {
 /* Projects */
 .projects {
   background-color: $backgroundSecondary;
+
+  &__heading {
+    padding-bottom: 64px;
+    color: $colorDarkPrimary;
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+    gap: 64px;
+  }
+
+  &__card {
+    position: relative;
+    background-color: $backgroundSecondary;
+    box-shadow: 0px 6px 16px rgba($color: $colorLightTertiary, $alpha: 0.6);
+
+    &__banner {
+      background-color: #dddddd;
+      display: flex;
+      padding: 6px;
+      & > * {
+        margin: 2px 2px;
+      }
+    }
+
+    &__imageContainer {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+    }
+
+    &__image {
+      position: absolute;
+      background-color: $colorLightTertiaryAlt;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__content {
+      padding: 20px;
+    }
+
+    &__heading {
+      color: $colorDarkPrimary;
+      padding-bottom: 20px;
+    }
+
+    &__paragraph {
+      color: $colorDarkSecondary;
+      line-height: 1.8;
+      height: 64px;
+
+      margin-bottom: 40px;
+    }
+  }
 }
 
 /* Contact */
@@ -527,6 +664,46 @@ a {
     & > svg {
       fill: $colorLightSecondary;
       margin-right: 16px;
+    }
+
+    &--link:hover {
+      transition: ease-in 192ms;
+      color: $highlightPrimary;
+      text-shadow: 0 0 0.01px $highlightPrimary;
+
+      & > svg {
+        transition: ease-in 192ms;
+        fill: $highlightPrimary;
+      }
+    }
+    &--linkedin:hover {
+      color: #0077b5;
+      transition: ease-in 192ms;
+
+      & > svg {
+        fill: #0077b5;
+        transition: ease-in 192ms;
+      }
+    }
+
+    &--github:hover {
+      color: #6cc644;
+      transition: ease-in 192ms;
+
+      & > svg {
+        fill: #6cc644;
+        transition: ease-in 192ms;
+      }
+    }
+
+    &--codepen:hover {
+      color: #0ebeff;
+      transition: ease-in 192ms;
+
+      & > svg {
+        fill: #0ebeff;
+        transition: ease-in 192ms;
+      }
     }
   }
 

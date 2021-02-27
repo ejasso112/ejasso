@@ -153,11 +153,12 @@
                 </div>
             </div>
         </section>
+
         <section class="skills" id="skills">
             <div class="skills__container container">
-                <div class="skills__content">
+                <div class="skills__content content">
                     <h2 class="skills__heading">technological skills</h2>
-                    <div class="skills__block content">
+                    <div class="skills__block">
                         <div class="skills__card">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.16 24">
                                 <path style="fill: #e44d26;" d="M1.93,21.61,0,0H21.16L19.24,21.6,10.56,24" />
@@ -315,106 +316,249 @@
                 <div class="projects__content content">
                     <h2 class="projects__heading">my projects</h2>
                     <div class="projects__block">
+                        <!-- Anime Tracker -->
                         <div class="projects__card">
-                            <div class="projects__card__image"></div>
-                            <h3 class="projects__card__heading">passVault</h3>
-                            <p class="projects__card__paragraph">passVault is a password manager that stores passwords
-                                in your local files.
-                            </p>
-                            <div class="projects__card__buttons">
-                                <a class="projects__card__primary button button--primary2" target="_blank"
-                                    rel="noopener" href="https://github.com/ejasso112/questland-optimizer-v2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            <div class="projects__card__banner">
+                                <div class="projects__card__ball ball ball--red"></div>
+                                <div class="projects__card__ball ball ball--yellow"></div>
+                                <div class="projects__card__ball ball ball--green"></div>
+                            </div>
+                            <div class="projects__card__imageContainer">
+                                <div class="projects__card__image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                                        viewBox="0 0 24 24">
+                                        <path style="fill: rgba(16, 16, 16, 1);"
+                                            d="M5 8.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 .5l-2.519 4-2.481-1.96-4 5.96h14l-5-8zm8-4v14h-20v-14h20zm2-2h-24v18h24v-18z" />
                                     </svg>
-                                    <span>code</span>
-                                </a>
-                                <a class="projects__card__secondary" target="_blank" rel="noopener"
-                                    href="https://questlandoptimizer.site/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
-                                        <path
-                                            d="M24,7.78a13.07,13.07,0,0,0-23.9,0,.49.49,0,0,0,0,.44,13.07,13.07,0,0,0,23.9,0A.49.49,0,0,0,24,7.78ZM12,13.5A5.5,5.5,0,1,1,17.45,8,5.5,5.5,0,0,1,12,13.5ZM15.45,8A3.5,3.5,0,1,1,12,4.5,3.5,3.5,0,0,1,15.45,8Z" />
-                                    </svg>
-                                    <span>preview</span>
-                                </a>
+                                </div>
+                            </div>
+                            <div class="projects__card__content">
+                                <h3 class="projects__card__heading">Anime Tracker (WIP)</h3>
+                                <p class="projects__card__paragraph">React App created to track all anime followed to
+                                    stay up to date on the latest episodes and season releases.
+                                </p>
+                                <div class="projects__card__buttons">
+                                    <a class="projects__card__primary button button--primary2" target="_blank"
+                                        rel="noopener" href="https://github.com/ejasso112/react-anime-tracker">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg>
+                                        code
+                                    </a>
+                                    <a class="projects__card__secondary button button--secondary2" target="_blank"
+                                        rel="noopener" style="pointer-events: none;" href="<url here>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"
+                                            viewBox="0 0 24 16">
+                                            <path
+                                                d="M24,7.78a13.07,13.07,0,0,0-23.9,0,.49.49,0,0,0,0,.44,13.07,13.07,0,0,0,23.9,0A.49.49,0,0,0,24,7.78ZM12,13.5A5.5,5.5,0,1,1,17.45,8,5.5,5.5,0,0,1,12,13.5ZM15.45,8A3.5,3.5,0,1,1,12,4.5,3.5,3.5,0,0,1,15.45,8Z" />
+                                        </svg>
+                                        preview
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- proFit -->
                         <div class="projects__card">
-                            <div class="projects__card__image"></div>
-                            <h3 class="projects__card__heading">passVault</h3>
-                            <p class="projects__card__paragraph">passVault is a password manager that stores passwords
-                                in your local files.
-                            </p>
-                            <div class="projects__card__buttons">
-                                <a class="projects__card__primary button button--primary2" target="_blank"
-                                    rel="noopener" href="https://github.com/ejasso112/questland-optimizer-v2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                    </svg>
-                                    <span>code</span>
-                                </a>
-                                <a class="projects__card__secondary" target="_blank" rel="noopener"
-                                    href="https://questlandoptimizer.site/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
-                                        <path
-                                            d="M24,7.78a13.07,13.07,0,0,0-23.9,0,.49.49,0,0,0,0,.44,13.07,13.07,0,0,0,23.9,0A.49.49,0,0,0,24,7.78ZM12,13.5A5.5,5.5,0,1,1,17.45,8,5.5,5.5,0,0,1,12,13.5ZM15.45,8A3.5,3.5,0,1,1,12,4.5,3.5,3.5,0,0,1,15.45,8Z" />
-                                    </svg>
-                                    <span>preview</span>
-                                </a>
+                            <div class="projects__card__banner">
+                                <div class="projects__card__ball ball ball--red"></div>
+                                <div class="projects__card__ball ball ball--yellow"></div>
+                                <div class="projects__card__ball ball ball--green"></div>
+                            </div>
+                            <div class="projects__card__imageContainer">
+                                <img class="projects__card__image" src="/res/img/proFit.png" alt="Pro Fit" />
+                            </div>
+                            <div class="projects__card__content">
+                                <h3 class="projects__card__heading">proFit (WIP)</h3>
+                                <p class="projects__card__paragraph">proFit is an e-commerese sample site for clothing.
+                                </p>
+                                <div class="projects__card__buttons">
+                                    <a class="projects__card__primary button button--primary2" target="_blank"
+                                        rel="noopener" style="pointer-events: none;"
+                                        href="https://github.com/ejasso112/react-anime-tracker">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg>
+                                        code
+                                    </a>
+                                    <a class="projects__card__secondary button button--secondary2" target="_blank"
+                                        rel="noopener" style="pointer-events: none;" href="<url here>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"
+                                            viewBox="0 0 24 16">
+                                            <path
+                                                d="M24,7.78a13.07,13.07,0,0,0-23.9,0,.49.49,0,0,0,0,.44,13.07,13.07,0,0,0,23.9,0A.49.49,0,0,0,24,7.78ZM12,13.5A5.5,5.5,0,1,1,17.45,8,5.5,5.5,0,0,1,12,13.5ZM15.45,8A3.5,3.5,0,1,1,12,4.5,3.5,3.5,0,0,1,15.45,8Z" />
+                                        </svg>
+                                        preview
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Questland Optimizer -->
                         <div class="projects__card">
-                            <div class="projects__card__image"></div>
-                            <h3 class="projects__card__heading">passVault</h3>
-                            <p class="projects__card__paragraph">passVault is a password manager that stores passwords
-                                in your local files.
-                            </p>
-                            <div class="projects__card__buttons">
-                                <a class="projects__card__primary button button--primary2" target="_blank"
-                                    rel="noopener" href="https://github.com/ejasso112/questland-optimizer-v2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                    </svg>
-                                    <span>code</span>
-                                </a>
-                                <a class="projects__card__secondary" target="_blank" rel="noopener"
-                                    href="https://questlandoptimizer.site/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
-                                        <path
-                                            d="M24,7.78a13.07,13.07,0,0,0-23.9,0,.49.49,0,0,0,0,.44,13.07,13.07,0,0,0,23.9,0A.49.49,0,0,0,24,7.78ZM12,13.5A5.5,5.5,0,1,1,17.45,8,5.5,5.5,0,0,1,12,13.5ZM15.45,8A3.5,3.5,0,1,1,12,4.5,3.5,3.5,0,0,1,15.45,8Z" />
-                                    </svg>
-                                    <span>preview</span>
-                                </a>
+                            <div class="projects__card__banner">
+                                <div class="projects__card__ball ball ball--red"></div>
+                                <div class="projects__card__ball ball ball--yellow"></div>
+                                <div class="projects__card__ball ball ball--green"></div>
+                            </div>
+                            <div class="projects__card__imageContainer">
+                                <img class="projects__card__image" src="/res/img/questlandOptimizer.png"
+                                    alt="Questland Optimizer" />
+                            </div>
+                            <div class="projects__card__content">
+                                <h3 class="projects__card__heading">questlandOptimizer.</h3>
+                                <p class="projects__card__paragraph">Mobile game Optimizer that allows players to
+                                    optimize their in game stats.
+                                </p>
+                                <div class="projects__card__buttons">
+                                    <a class="projects__card__primary button button--primary2" target="_blank"
+                                        rel="noopener" href="https://github.com/ejasso112/questland-optimizer-v2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg>
+                                        code
+                                    </a>
+                                    <a class="projects__card__secondary button button--secondary2" target="_blank"
+                                        rel="noopener" href="https://questlandoptimizer.site/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"
+                                            viewBox="0 0 24 16">
+                                            <path
+                                                d="M24,7.78a13.07,13.07,0,0,0-23.9,0,.49.49,0,0,0,0,.44,13.07,13.07,0,0,0,23.9,0A.49.49,0,0,0,24,7.78ZM12,13.5A5.5,5.5,0,1,1,17.45,8,5.5,5.5,0,0,1,12,13.5ZM15.45,8A3.5,3.5,0,1,1,12,4.5,3.5,3.5,0,0,1,15.45,8Z" />
+                                        </svg>
+                                        <span>preview</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- passVault -->
                         <div class="projects__card">
-                            <div class="projects__card__image"></div>
-                            <h3 class="projects__card__heading">passVault</h3>
-                            <p class="projects__card__paragraph">passVault is a password manager that stores passwords
-                                in your local files.
-                            </p>
-                            <div class="projects__card__buttons">
-                                <a class="projects__card__primary button button--primary2" target="_blank"
-                                    rel="noopener" href="https://github.com/ejasso112/questland-optimizer-v2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                    </svg>
-                                    <span>code</span>
-                                </a>
-                                <a class="projects__card__secondary" target="_blank" rel="noopener"
-                                    href="https://questlandoptimizer.site/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
-                                        <path
-                                            d="M24,7.78a13.07,13.07,0,0,0-23.9,0,.49.49,0,0,0,0,.44,13.07,13.07,0,0,0,23.9,0A.49.49,0,0,0,24,7.78ZM12,13.5A5.5,5.5,0,1,1,17.45,8,5.5,5.5,0,0,1,12,13.5ZM15.45,8A3.5,3.5,0,1,1,12,4.5,3.5,3.5,0,0,1,15.45,8Z" />
-                                    </svg>
-                                    <span>preview</span>
-                                </a>
+                            <div class="projects__card__banner">
+                                <div class="projects__card__ball ball ball--red"></div>
+                                <div class="projects__card__ball ball ball--yellow"></div>
+                                <div class="projects__card__ball ball ball--green"></div>
+                            </div>
+                            <div class="projects__card__imageContainer">
+                                <img class="projects__card__image" src="/res/img/passVault.png" alt="PassVault" />
+                            </div>
+                            <div class="projects__card__content">
+                                <h3 class="projects__card__heading">passVault</h3>
+                                <p class="projects__card__paragraph">passVault is a password manager that stores
+                                    passwords in your local files.
+                                </p>
+                                <div class="projects__card__buttons">
+                                    <a class="projects__card__primary button button--primary2" target="_blank"
+                                        rel="noopener"
+                                        href="https://github.com/ejasso112/electron-react-password-manager">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg>
+                                        code
+                                    </a>
+                                    <a class="projects__card__secondary button button--secondary2" target="_blank"
+                                        style="display: none;" rel="noopener" href="https://questlandoptimizer.site/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"
+                                            viewBox="0 0 24 16">
+                                            <path
+                                                d="M24,7.78a13.07,13.07,0,0,0-23.9,0,.49.49,0,0,0,0,.44,13.07,13.07,0,0,0,23.9,0A.49.49,0,0,0,24,7.78ZM12,13.5A5.5,5.5,0,1,1,17.45,8,5.5,5.5,0,0,1,12,13.5ZM15.45,8A3.5,3.5,0,1,1,12,4.5,3.5,3.5,0,0,1,15.45,8Z" />
+                                        </svg>
+                                        preview
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Hurricane Maria -->
+                        <div class="projects__card">
+                            <div class="projects__card__banner">
+                                <div class="projects__card__ball ball ball--red"></div>
+                                <div class="projects__card__ball ball ball--yellow"></div>
+                                <div class="projects__card__ball ball ball--green"></div>
+                            </div>
+                            <div class="projects__card__imageContainer">
+                                <img class="projects__card__image" src="/res/img/hurricaneMaria.png"
+                                    alt="Hurricane Maria" />
+                            </div>
+                            <div class="projects__card__content">
+                                <h3 class="projects__card__heading">Hurricane Maria</h3>
+                                <p class="projects__card__paragraph">Webpage that displays all of the information about
+                                    Hurricane Maria. (First Project)
+                                </p>
+                                <div class="projects__card__buttons">
+                                    <a class="projects__card__primary button button--primary2" target="_blank"
+                                        rel="noopener" href="https://github.com/ejasso112/hurricane-maria">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg>
+                                        code
+                                    </a>
+                                    <a class="projects__card__secondary button button--secondary2" target="_blank"
+                                        style="display: none;" rel="noopener" href="https://questlandoptimizer.site/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"
+                                            viewBox="0 0 24 16">
+                                            <path
+                                                d="M24,7.78a13.07,13.07,0,0,0-23.9,0,.49.49,0,0,0,0,.44,13.07,13.07,0,0,0,23.9,0A.49.49,0,0,0,24,7.78ZM12,13.5A5.5,5.5,0,1,1,17.45,8,5.5,5.5,0,0,1,12,13.5ZM15.45,8A3.5,3.5,0,1,1,12,4.5,3.5,3.5,0,0,1,15.45,8Z" />
+                                        </svg>
+                                        preview
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Boiler Plate -->
+                        <!-- <div class="projects__card">
+                            <div class="projects__card__banner">
+                                <div class="projects__card__ball ball ball--red"></div>
+                                <div class="projects__card__ball ball ball--yellow"></div>
+                                <div class="projects__card__ball ball ball--green"></div>
+                            </div>
+                            <div class="projects__card__imageContainer">
+                                <div class="projects__card__image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                                        viewBox="0 0 24 24">
+                                        <path style="fill: rgba(16, 16, 16, 1);"
+                                            d="M5 8.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 .5l-2.519 4-2.481-1.96-4 5.96h14l-5-8zm8-4v14h-20v-14h20zm2-2h-24v18h24v-18z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="projects__card__content">
+                                <h3 class="projects__card__heading">Lorem Ipsum</h3>
+                                <p class="projects__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                </p>
+                                <div class="projects__card__buttons">
+                                    <a class="projects__card__primary button button--primary2" target="_blank"
+                                        rel="noopener" href="https://github.com/ejasso112/<url here>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg>
+                                        code
+                                    </a>
+                                    <a class="projects__card__secondary button button--secondary2" target="_blank"
+                                        rel="noopener" href="<url here>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"
+                                            viewBox="0 0 24 16">
+                                            <path
+                                                d="M24,7.78a13.07,13.07,0,0,0-23.9,0,.49.49,0,0,0,0,.44,13.07,13.07,0,0,0,23.9,0A.49.49,0,0,0,24,7.78ZM12,13.5A5.5,5.5,0,1,1,17.45,8,5.5,5.5,0,0,1,12,13.5ZM15.45,8A3.5,3.5,0,1,1,12,4.5,3.5,3.5,0,0,1,15.45,8Z" />
+                                        </svg>
+                                        preview
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -466,16 +610,16 @@
 
                 <div class="footer__siteMap">
                     <h3 class="footer__heading">Site Map</h3>
-                    <a class="footer__link" href="#home">home</a>
-                    <a class="footer__link" href="#about">about</a>
-                    <a class="footer__link" href="#skills">skills</a>
-                    <a class="footer__link" href="#projects">projects</a>
-                    <a class="footer__link" href="#contact">contact</a>
+                    <a class="footer__link footer__link--link" href="#home">home</a>
+                    <a class="footer__link footer__link--link" href="#about">about</a>
+                    <a class="footer__link footer__link--link" href="#skills">skills</a>
+                    <a class="footer__link footer__link--link" href="#projects">projects</a>
+                    <a class="footer__link footer__link--link" href="#contact">contact</a>
                 </div>
 
                 <div class="footer__findMe">
                     <h3 class="footer__heading">Find Me</h3>
-                    <a class="footer__link" target="_blank" rel="noopener"
+                    <a class="footer__link footer__link--linkedin" target="_blank" rel="noopener"
                         href="https://www.linkedin.com/in/eduardo-jasso">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path
@@ -483,14 +627,16 @@
                         </svg>
                         linkedin
                     </a>
-                    <a class="footer__link" target="_blank" rel="noopener" href="https://github.com/ejasso112">
+                    <a class="footer__link footer__link--github" target="_blank" rel="noopener"
+                        href="https://github.com/ejasso112">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path
                                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                         </svg>
                         github
                     </a>
-                    <a class="footer__link" target="_blank" rel="noopener" href="https://codepen.io/">
+                    <a class="footer__link footer__link--codepen" target="_blank" rel="noopener"
+                        href="https://codepen.io/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path
                                 d="M24,8.16a.31.31,0,0,0,0-.08A.43.43,0,0,0,24,8l0-.08s0,0,0,0l0-.07,0,0a.16.16,0,0,0,0-.07l0,0-.05-.06,0,0-.06,0,0,0h0L12.57.17a1,1,0,0,0-1.14,0L.46,7.49h0l0,0-.06,0,0,0-.06.06,0,0a.16.16,0,0,0,0,.07l0,0,0,.07s0,0,0,0L.05,8a.43.43,0,0,0,0,.05.19.19,0,0,0,0,.08.09.09,0,0,0,0,.05.57.57,0,0,0,0,.13v7.32a.57.57,0,0,0,0,.13s0,0,0,.05a.31.31,0,0,0,0,.08s0,0,0,.05l0,.08a.08.08,0,0,1,0,.05.43.43,0,0,1,0,.07l0,0,0,.06,0,.05,0,.05,0,0,.06.05,0,0h0l11,7.32a1,1,0,0,0,1.14,0l11-7.32h0l0,0,.06,0,0,0,.06-.06,0,0a.25.25,0,0,0,0-.07l0,0,0-.07s0,0,0-.05L24,16a.43.43,0,0,0,0-.05.31.31,0,0,0,0-.08.09.09,0,0,0,0-.05.57.57,0,0,0,0-.13V8.34a.57.57,0,0,0,0-.13s0,0,0-.05ZM12,14.44,8.35,12,12,9.56,15.65,12,12,14.44ZM11,7.77l-4.47,3L2.89,8.35,11,3V7.77ZM4.64,12,2.06,13.73V10.27L4.64,12ZM6.5,13.24l4.47,3V21L2.89,15.65,6.5,13.24Zm6.53,3,4.47-3,3.61,2.41L13,21V16.23ZM19.36,12l2.58-1.73v3.46L19.36,12ZM17.5,10.76,13,7.77V3l8.08,5.39L17.5,10.76Z" />
@@ -498,7 +644,7 @@
                         codepen
                     </a>
 
-                    <a class="footer__link" target="_blank" rel="noopener" href="resume.pdf">
+                    <a class="footer__link footer__link--link" target="_blank" rel="noopener" href="resume.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
                             <path
                                 d="M13,22.5H0A1.66,1.66,0,0,0,1.77,24H13ZM13,18H0v1.5H13Zm9-3V13.5H1.65A1.58,1.58,0,0,0,0,15Zm0-6H14v1.5h8ZM9.14,7c-1.79-.4-1.67-.47-1.54-.73,1.09-2,1.27-3.71.53-4.9A3,3,0,0,0,5.5,0,3,3,0,0,0,2.86,1.36c-.44.7-.95,2.25.54,4.88.11.18.45.29-1.6.73C0,7.38,0,8.55,0,9.5v1H11v-1C11,8.55,11,7.38,9.14,7ZM20.29,0H15.71A1.62,1.62,0,0,0,14,1.5h8A1.62,1.62,0,0,0,20.29,0ZM22,6V4.5H14V6ZM16,18h6l-6,6Z" />
